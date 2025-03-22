@@ -1,3 +1,7 @@
+package com.example.myapplication.ui.news
+
+import com.example.myapplication.data.model.Article
+
 data class NewsState(
     val headlines: List<Article> = emptyList(),
     val news: List<Article> = emptyList(),

@@ -1,3 +1,13 @@
+package com.example.myapplication.ui.detail
+
+import android.graphics.Bitmap
+import android.os.Bundle
+import android.view.View
+import android.webkit.WebView
+import android.webkit.WebViewClient
+import androidx.appcompat.app.AppCompatActivity
+import com.example.myapplication.databinding.ActivityDetailBinding
+
 class DetailActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailBinding
     

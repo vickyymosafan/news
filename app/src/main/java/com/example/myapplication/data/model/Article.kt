@@ -1,3 +1,5 @@
+package com.example.myapplication.data.model
+
 data class Article(
     val source: Source,
     val author: String?,

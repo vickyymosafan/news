@@ -1,3 +1,19 @@
+package com.example.myapplication.ui.news
+
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
+import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.example.myapplication.R
+import com.example.myapplication.data.model.Article
+import com.example.myapplication.databinding.ItemHeadlineBinding
+import java.text.SimpleDateFormat
+import java.util.Calendar
+import java.util.Locale
+import java.util.TimeZone
+
 class HeadlineAdapter(private val onItemClick: (Article) -> Unit) : 
     ListAdapter<Article, HeadlineAdapter.HeadlineViewHolder>(ArticleDiffCallback()) {
 

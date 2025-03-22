@@ -1,3 +1,5 @@
+package com.example.myapplication.utils
+
 object Constants {
     const val API_KEY = "7e9f83ca5e1e4b28bc6d7ea27b663b6c"
     const val BASE_URL = "https://newsapi.org/v2/"

@@ -1,3 +1,19 @@
+package com.example.myapplication.ui.news
+
+import android.content.Intent
+import android.os.Bundle
+import android.widget.Toast
+import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isVisible
+import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.myapplication.data.model.Article
+import com.example.myapplication.databinding.ActivityNewsBinding
+import com.example.myapplication.ui.detail.DetailActivity
+import kotlinx.coroutines.launch
+
 class NewsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityNewsBinding
     private val viewModel: NewsViewModel by viewModels { NewsViewModelFactory() }

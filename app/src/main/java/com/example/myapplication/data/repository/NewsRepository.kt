@@ -1,3 +1,8 @@
+package com.example.myapplication.data.repository
+
+import com.example.myapplication.data.api.NewsApiService
+import com.example.myapplication.data.model.Article
+
 class NewsRepository(private val apiService: NewsApiService) {
     suspend fun getTopHeadlines(): Result<List<Article>> {
         return try {

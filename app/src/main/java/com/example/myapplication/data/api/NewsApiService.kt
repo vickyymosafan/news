@@ -1,3 +1,10 @@
+package com.example.myapplication.data.api
+
+import com.example.myapplication.data.model.NewsResponse
+import com.example.myapplication.utils.Constants
+import retrofit2.http.GET
+import retrofit2.http.Query
+
 interface NewsApiService {
     @GET("top-headlines")
     suspend fun getTopHeadlines(
